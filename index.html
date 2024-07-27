@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Operations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="src/controllers/scripts.mjs"></script>
+</head>
+<body>
+    <div id="auxMain_div"></div>
+    <main>
+        <div id="vista">
+            <div id="Estacion_container">
+                <h1><img src="src/img/LOGO.png" alt="Logo"> </h1>
+                <h2>Agregar Destino</h2>
+                <input type="text" id="newCuidad_input" placeholder="Nombre de la ciudad">
+                <button id="newCuidad_button">Agregar</button>
+                <h2>Punto de Inicio</h2>
+                <input type="text" id="PuntoInicio_input" placeholder="Ciudad Inicial">
+                <h2>Punto Final</h2>
+                <input type="text" id="PuntoFinal_input" placeholder="Ciudad Destino">
+                <h2>Distancia</h2>
+                <input type="text" id="distanciaEntreVertices_input" placeholder="Km">
+                <button id="agregarAristaBtn">Agregar</button>
+                <button id="recorridoProfundidadBtn">Mostrar Recorrido</button>
+            </div>
+        </div>
+        <div id="rutaMasCorta_container">
+            <h1>Buscar Ruta Más Corta</h1>
+            <br>
+            <h2>Punto de Inicio</h2>
+            <input type="text" id="puntoInicioRuta_input" placeholder="Ciudad de inicio">
+            <h2>Punto de Fin</h2>
+            <input type="text" id="puntoFinalRuta_input" placeholder="Ciudad de destino">
+            <button id="buscarRutaMasCorta_Btn">Buscar</button>
+        </div>
+    </main>
+</body>
+</html>
